@@ -2,19 +2,17 @@
 name = "drug-ner"
 version = "0.1.0"
 description = ""
-authors = ["George Kontonatsios <g.kontonatsios@thesignalgroup.com>"]
+authors = ["George Kontonatsios <georgios.kontonatsios@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.10,<4.0"
 pandas = "^2.2.2"
-psycopg2 = "^2.9.9"
+psycopg2-binary = "2.9.9"
 loguru = "^0.7.2"
 requests = "^2.32.3"
 openai = "^1.32.0"
 tqdm = "^4.66.4"
-torchvision = "*"
-torchaudio = "*"
 transformers = {extras = ["torch"], version = "^4.41.2"}
 datasets = "^2.19.2"
 scikit-learn = "^1.5.0"
@@ -22,6 +20,9 @@ sentencepiece = "^0.2.0"
 streamlit = "^1.35.0"
 st-annotated-text = "^4.0.1"
 pydantic-settings = "^2.3.1"
+torch = "^2.3.1"
+torchvision = "^0.18.1"
+torchaudio = "^2.3.1"
  
 
 [build-system]
