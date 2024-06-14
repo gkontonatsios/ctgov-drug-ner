@@ -72,7 +72,7 @@ def main():
     # Get the path to the data directory
     project_root = os.path.dirname(os.path.dirname(__file__))
     data_dir = os.path.join(project_root, 'data')
-    nct_summaries_df = pd.read_csv(os.path.join(data_dir, config['brief_summaries_training_file']))
+    nct_summaries_df = pd.read_csv(os.path.join(data_dir, config['brief_summaries_file']))
 
     drug_names = []
     pref_names = []
@@ -84,6 +84,6 @@ def main():
     nct_summaries_df["drug_names"] = drug_names
     nct_summaries_df["preferred_drug_names"] = pref_names
 
-    nct_summaries_df.to_csv(os.path.join(data_dir, config['gpt_prediction_file_training']), index=False)
+    nct_summaries_df.to_csv(os.path.join(data_dir, config['gpt_prediction_file']), index=False)
 if __name__ == '__main__':
     main()
