@@ -21,3 +21,14 @@ poetry shell
 
 ## Step 3: Edif config
 Edit the `drug_ner/config.json` file and change the `dbname`, `user`, `password`, `host`, `port` and `open_ai_api_key` variables to match your local environment.
+
+## Step 4: Crawl summaries from www.clinicaltrials.gov
+Collect the brief summaries of clinical trials corresponding to the nct_ids found in `data/input_nct_ids.txt`. Run the following: 
+
+```
+poetry install
+poetry shell
+```
+cd drug_ner/
+poetry run python ctgov_crawler.py
+```
