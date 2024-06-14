@@ -20,4 +20,4 @@ poetry shell
 ```
 
 ## Step 3: Edif config
-Change config file to your local env variables. For this edit the `drug_ner/config.json` file and change the `dbname`, `user`, `password`, `host`, `port` and `open_ai_api_key` variables to match your local environment.
+Edit the `drug_ner/config.json` file and change the `dbname`, `user`, `password`, `host`, `port` and `open_ai_api_key` variables to match your local environment.
