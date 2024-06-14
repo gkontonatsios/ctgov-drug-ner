@@ -26,10 +26,6 @@ Edit the `drug_ner/config.json` file and change the `dbname`, `user`, `password`
 Collect the brief summaries of clinical trials corresponding to the nct_ids found in `data/input_nct_ids.txt`. Run the following: 
 
 ```
-poetry install
-poetry shell
-
-```
 cd drug_ner/
 poetry run python ctgov_crawler.py
 ```
