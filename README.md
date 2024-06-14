@@ -54,3 +54,11 @@ Finally run:
 cd drug_ner/
 poetry run python t5_inference.py
 ```
+
+
+## Step 7: Run the streamlit app
+
+```
+cd drug_ner/
+poetry run streamlit run app.py
+```
