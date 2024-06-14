@@ -28,6 +28,7 @@ Collect the brief summaries of clinical trials corresponding to the nct_ids foun
 ```
 poetry install
 poetry shell
+
 ```
 cd drug_ner/
 poetry run python ctgov_crawler.py
