@@ -1,0 +1,16 @@
+{
+    "dbname": "drugcentral",
+    "user": "postgres",
+    "password": "1234",
+    "host": "172.21.255.217",
+    "port": "5433",
+    "input_nctid_list_file": "input_nct_ids.txt",
+    "brief_summaries_file": "brief_summaries.csv",
+    "brief_summaries_training_file": "brief_summaries.training.csv",
+    "gpt_prediction_file": "gpt_predictions.csv",
+    "gpt_prediction_file_training": "gpt_predictions.training.csv",
+    "ground_truth": "ground_truth.csv",
+    "t5_prediction_file": "t5_predictions.csv",
+    "open_ai_api_key": "",
+    "t5_check_point": ""
+}
